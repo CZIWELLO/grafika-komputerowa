@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wirtualne Okno — PoC</title>
+    <style>
+      /* Cały ekran to okno — canvas zajmuje całą stronę. */
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+      #view {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
